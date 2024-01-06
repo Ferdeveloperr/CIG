@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,13 @@
         content="Construcciones Industriales Gomez. Mas de 20 anios de experiencia creando galpones, tinglados, naves, pisos industriales y proyectos residenciales de calidad">
     <meta name=" keywords" content="techos, pisos, zingueria, naves industriales ">
     <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
 
-    <h1>Cig</h1>
+    <!-- <h1>Cig</h1> -->
     <header>
         <!-- <section>BRAND</section> -->
         <!-- <section>Servicios, nosotros, contacto</section> -->
@@ -35,6 +36,37 @@
     </section>
     <section>
         <!-- <form action="">FORMULARIO</form> -->
+
+        <div class="form-content">
+
+            <h2>Enviar su formulario</h2>
+
+            <form action="">
+
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject" id="subject">
+
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+
+
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email">
+
+                <label for="phone">Telefono</label>
+                <input type="number" name="phone" id="phone">
+
+
+                <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+
+                <input class="btn" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
         <!-- campos: nombre, mail, telefono, desplegable, mensaje, submit -->
         <!-- <img src="" alt="Imagenes desplegables"> -->
     </section>
