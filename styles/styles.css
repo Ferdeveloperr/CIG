@@ -1,14 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+
+}
+
+.float:hover {
+    background-color: #28e76e;
+}
+
+.fa-whatsapp {
+    font-size: 58px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
 }
+
+/* Estilos del navbar */
+
+.header {
+    background-color: #000;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: green;
+}
+
+.header .btn-nav button {
+    font-weight: 700;
+    color: red;
+    padding: 9px 25px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn-nav button:hover {
+    background-color: #1e92e9;
+    color: violet;
+    transform: scale(1.1);
+
+}
+
+/* estilos boton wsp */
+
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+}
+
+/* Estilos del body */
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #555764;
     display: flex;
     flex-direction: column;
@@ -81,14 +185,14 @@ textarea:focus {
 }
 
 
-.btn {
+.btn-form {
     background-color: #1e92e9;
     width: 150px;
     align-self: flex-end;
     cursor: pointer;
 }
 
-.btn:hover {
+.btn-form:hover {
     background-color: #219bf9;
 }
 
@@ -103,7 +207,7 @@ input[type=number]::-webkit-outer-spin-button {
 .site-footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
 
 }
 
@@ -120,7 +224,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-section h3 {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .footer-section ul {
@@ -129,7 +233,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-section ul li {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 .social-icons {
@@ -144,7 +248,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer-bottom {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: #000;
 }
 
