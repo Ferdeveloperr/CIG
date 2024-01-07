@@ -36,42 +36,85 @@
     </section>
     <section>
         <!-- <form action="">FORMULARIO</form> -->
+        <div class="main-content">
+            <div class="form-content">
+                <div class="form-content">
 
-        <div class="form-content">
+                    <h2>Enviar su formulario</h2>
 
-            <h2>Enviar su formulario</h2>
+                    <form action="https://formsubmit.co/tecnoworld.presupuestos@gmail.com" method="POST">
 
-            <form action="">
-
-                <label for="subject">Asunto</label>
-                <input type="text" name="subject" id="subject">
-
-
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name">
+                        <label for="subject">Asunto</label>
+                        <input type="text" name="subject" placeholder="Ingrese el asunto" id="subject">
 
 
-                <label for="email">Correo electronico</label>
-                <input type="email" name="email" id="email">
-
-                <label for="phone">Telefono</label>
-                <input type="number" name="phone" id="phone">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" id="name">
 
 
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo electronico" id="email">
 
-                <input class="btn" type="submit" value="Enviar">
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" placeholder="Ingrese su Nro. de telefono" id="phone">
 
-            </form>
 
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" placeholder="Ingrese el mensaje" cols="30"
+                            rows="5"></textarea>
+
+                        <input class="btn" type="submit" value="Enviar">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    </form>
+
+                </div>
+            </div>
         </div>
 
         <!-- campos: nombre, mail, telefono, desplegable, mensaje, submit -->
         <!-- <img src="" alt="Imagenes desplegables"> -->
     </section>
-    <footer>
-        <!-- informacion de la empresa -->
+
+    <!-- informacion de la empresa -->
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Secciones</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Formulario</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Email: info@cigconstrucciones.com</p>
+                <p>Teléfono: +123456789</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <ul class="social-icons">
+                    <li><a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="mailto:info@cigconstrucciones.com"><img src="email-icon.png" alt="Email"></a></li>
+                    <li><a href="https://wa.me/123456789" target="_blank"><img src="whatsapp-icon.png"
+                                alt="WhatsApp"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Cig Construcciones | Todos los derechos reservados</p>
+            <a href="#">Términos y Condiciones</a>
+        </div>
+
     </footer>
 
 </body>
