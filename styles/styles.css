@@ -182,7 +182,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #555764;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     /* Cambiado a column */
@@ -303,7 +303,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 10vh;
 
 }
 
@@ -321,7 +321,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-section ul li {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .social-icons {
@@ -362,5 +362,31 @@ input[type=number]::-webkit-outer-spin-button {
 
     form {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        padding: 0 10px;
+    }
+
+    .footer-section h3 {
+        font-size: 15px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .social-icons li {
+        margin-right: 5px;
+    }
+
+    .footer-bottom {
+        padding: 5px 0;
     }
 }
