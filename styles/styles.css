@@ -94,9 +94,9 @@
 }
 
 .header .btn-nav button:hover {
-    background-color: blue;
-    color: green;
-    transform: scale(1.4);
+    background-color: green;
+    color: white;
+    transform: scale(1.3);
 
 }
 
@@ -131,8 +131,9 @@
 } */
 
 .containerMain {
+    display: flex;
     position: relative;
-    height: 1000px;
+    height: 60%;
     /* Ajusta la altura según tus necesidades */
     overflow: hidden;
 }
@@ -142,13 +143,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: url('./image/multimediaTres.jpg') center/cover no-repeat;
+    height: 30%;
+    background-size: cover;
+
+    /* background: url('./image/multimediaTres.jpg') center/cover no-repeat; */
     /* Otros estilos para la sección */
 }
 
 /* Estilos opcionales para centrar el contenido dentro del contenedor */
 .bgModification img {
+
     width: 100%;
     height: auto;
 }
@@ -220,38 +224,48 @@ body {
 
 .form-content {
 
-    background: linear-gradient(50deg,
-            rgba(40, 42, 55, 1) 50%,
-            rgba(40, 42, 55, 1)),
-        url(image/obrero.jpg);
+    background: url(../image/multimediaDieciocho.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
-    width: 1000px;
-    border-radius: 25px;
+    width: 100%;
+    border-radius: 15px;
+
 
 
 
 }
 
 .form-content h2 {
+
     color: #f4f6f9;
     font-size: 40px;
     margin-bottom: 25px;
 
 }
 
+.textFormContent {
+    display: flex;
+    justify-content: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
+
     width: 50%;
+}
+
+.formContentContainer {
+    display: flex;
+    justify-content: center;
 }
 
 label {
 
     font-size: 17px;
-    color: #959aab;
+    color: #f4f6f9;
     margin-bottom: 10px;
 
 }
@@ -259,7 +273,7 @@ label {
 input,
 textarea {
     padding: 17px 14px;
-    background-color: #333646;
+    background-color: black;
     border: 0;
     font-size: 15px;
     color: #f4f6f9;
@@ -321,7 +335,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer-section ul li {
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 .social-icons {
@@ -331,7 +345,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .social-icons li {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .footer-bottom {

@@ -45,7 +45,7 @@
             <!-- <h1 class="textMain">Bienvenidos a CIG</h1>
             <p class="subtMain">Proyectos chicos, medianos y de gran escala!</p> -->
             <!-- <main>background image, texto con <p>, call to action </main> -->
-            <img src="./image/multimediaTres.jpg" alt="Nave industrial">
+            <img src="./image/bkgUno.jpg" alt="Nave industrial">
             <button class="btnMain">Call to action</button>
             <!-- <button>WSP</button> -->
         </div>
@@ -58,10 +58,11 @@
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="imagen1.jpg" class="card-img-top" alt="Servicio 1">
+                    <img src="./image/multimediaSiete.jpg" class="card-img-top" alt="Servicio 1">
                     <div class="card-body">
                         <h5 class="card-title">Servicio 1</h5>
                         <p class="card-text">Descripción del Servicio 1.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
@@ -69,10 +70,11 @@
             <!-- Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="imagen2.jpg" class="card-img-top" alt="Servicio 2">
+                    <img src="./image/multimediaDieciocho.jpg" class="card-img-top" alt="Servicio 2">
                     <div class="card-body">
                         <h5 class="card-title">Servicio 2</h5>
                         <p class="card-text">Descripción del Servicio 2.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
@@ -80,10 +82,11 @@
             <!-- Card 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="imagen3.jpg" class="card-img-top" alt="Servicio 3">
+                    <img src="./image/multimediaDiez.jpg" class="card-img-top" alt="Servicio 3">
                     <div class="card-body">
                         <h5 class="card-title">Servicio 3</h5>
                         <p class="card-text">Descripción del Servicio 3.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
@@ -99,35 +102,37 @@
 
             <div class="form-content">
 
-                <h2>Enviar su formulario</h2>
-
-                <form action="https://formsubmit.co/tecnoworld.presupuestos@gmail.com" method="POST">
-
-                    <label for="subject">Asunto</label>
-                    <input type="text" name="subject" placeholder="Ingrese el asunto" id="subject">
+                <h2 class="textFormContent">Enviar su formulario</h2>
 
 
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" placeholder="Ingrese su nombre" id="name">
+                <div class="formContentContainer">
+                    <form action="https://formsubmit.co/tecnoworld.presupuestos@gmail.com" method="POST">
+
+                        <label for="subject">Asunto</label>
+                        <input type="text" name="subject" placeholder="Ingrese el asunto" id="subject">
 
 
-                    <label for="email">Correo electronico</label>
-                    <input type="email" name="email" placeholder="Ingrese su correo electronico" id="email">
-
-                    <label for="phone">Telefono</label>
-                    <input type="number" name="phone" placeholder="Ingrese su Nro. de telefono" id="phone">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" placeholder="Ingrese su nombre" id="name">
 
 
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" placeholder="Ingrese el mensaje" cols="30"
-                        rows="5"></textarea>
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo electronico" id="email">
 
-                    <input class="btn-form" type="submit" value="Enviar">
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
-                    <input type="hidden" name="_captcha" value="false">
+                        <label for="phone">Telefono</label>
+                        <input type="number" name="phone" placeholder="Ingrese su Nro. de telefono" id="phone">
 
-                </form>
 
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" placeholder="Ingrese el mensaje" cols="30"
+                            rows="5"></textarea>
+
+                        <input class="btn-form" type="submit" value="Enviar">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                        <input type="hidden" name="_captcha" value="false">
+
+                    </form>
+                </div>
             </div>
 
         </div>
@@ -160,12 +165,10 @@
             <div class="footer-section">
                 <h3>Redes Sociales</h3>
                 <ul class="social-icons">
-                    <li><a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
-                    <li><a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
-                    <li><a href="mailto:tecnoworld.presupuestos@gmail.com"><img src="email-icon.png" alt="Email"></a>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="mailto:tecnoworld.presupuestos@gmail.com"><i class="fa-regular fa-envelope"></i></a>
                     </li>
-                    <li><a href="https://wa.me/123456789" target="_blank"><img src="whatsapp-icon.png"
-                                alt="WhatsApp"></a></li>
                 </ul>
             </div>
         </div>
