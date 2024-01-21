@@ -143,7 +143,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 100%;
     background-size: cover;
 
     /* background: url('./image/multimediaTres.jpg') center/cover no-repeat; */
@@ -199,10 +199,13 @@ body {
     align-items: center;
 
 
-    /* Hace que este div ocupe todo el espacio disponible */
+
 }
 
-/* Estilos de la seccion servicios */
+
+/* ESTILOS DE LA SECCION DE SERVICIOS */
+
+
 
 .services-section {
     background-color: #fff;
@@ -220,6 +223,15 @@ body {
 }
 
 
+
+/* ESTILOS DE LA SECCION DE NOSOTROS */
+.modificationCards {
+    margin-top: 100px;
+
+}
+
+
+
 /* Estilos del formulario */
 
 .form-content {
@@ -230,7 +242,7 @@ body {
     background-size: cover;
     padding: 50px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
 
 
 
