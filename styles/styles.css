@@ -40,8 +40,8 @@
     color: white;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    height: 100px;
+    padding: 5px 5%;
 }
 
 .header .logo {
@@ -50,7 +50,7 @@
 
 .header .logo img {
     background-color: black;
-    height: 110px;
+    height: 90px;
     width: auto;
     transition: all 0.3s;
 }
@@ -82,7 +82,7 @@
     color: green;
 }
 
-.header .btn-nav button {
+.special-btn-nav button {
     font-weight: 700;
     color: black;
     padding: 9px 25px;
@@ -93,12 +93,31 @@
     transition: all 0.4s ease 0s;
 }
 
-.header .btn-nav button:hover {
+.special-btn-nav button:hover {
     background-color: green;
     color: white;
     transform: scale(1.2);
 
 }
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    /* Color del texto */
+}
+
 
 /* Estilos de la section principal */
 
@@ -146,8 +165,7 @@
     height: 100%;
     background-size: cover;
 
-    /* background: url('./image/multimediaTres.jpg') center/cover no-repeat; */
-    /* Otros estilos para la sección */
+
 }
 
 /* Estilos opcionales para centrar el contenido dentro del contenedor */
@@ -376,6 +394,30 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none;
 }
 
+
+.navbar-toggler-icon {
+    background-color: #007bff;
+    /* Color azul (#007bff) como ejemplo; puedes cambiarlo según tus preferencias */
+}
+
+
+
+
+/* ESTILOS DE MEDIA QUERY */
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        /* Centra los elementos en el eje transversal */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+        /* Agrega un margen inferior entre los elementos en el modo columna */
+    }
+}
 
 @media(max-width:991px) {
     body {
