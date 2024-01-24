@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="fontello.css">
     <link rel="icon" href="./image/iconoPrueba.svg" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="sectionID">
 
     <a href="https://api.whatsapp.com/send?phone=1126629808&text=Hola,%20quiero%20mas%20info%20acerca%20de%20..."
         target="_blank" class="float">
@@ -30,30 +33,22 @@
         </div>
         <nav class="styleNavbar">
             <ul class="nav-links">
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Legales</a></li>
+                <li><a href="#sectionServicios">Servicios</a></li>
+                <li><a href="#sectionNosotros">Nosotros</a></li>
+                <li><a href="#sectionFooter">Legales</a></li>
             </ul>
         </nav>
 
 
     </header>
 
-    <!-- <section class="containerMain">
-        <div class="bgModification">
-
-            <img src="./image/bkgUno.jpg" alt="Nave industrial">
-            <a href="#" class="special-btn-nav"><button>Contacto</button></a>
-
-        </div>
-    </section> -->
 
     <section class="containerMain">
         <div class="bgModification" style="position: relative; text-align: center;">
 
             <img src="./image/bkgUno.jpg" alt="Nave industrial" style="width: 100%; height: auto;">
 
-            <a href="#" class="special-btn-nav"
+            <a href="#sectionForm" class="special-btn-nav"
                 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                 <button>Contacto</button>
             </a>
@@ -61,14 +56,21 @@
         </div>
     </section>
 
+
+    <!-- SECCION DE SERVICIOS -->
+
+
     <section class="container">
-        <h2 class="text-center mb-5">Nuestros Servicios</h2>
-        <h4 class="text-center mb -4">Elegi la opcion que mejor se adapte a tu trabajo</h4>
+        <div id="sectionServicios">
+            <h2 class="textServicios">Nuestros Servicios</h2>
+        </div>
+        <h4 class="textServicios">Elegi la opcion que mejor se adapte a tu trabajo</h4>
+        <hr>
         <div class="row">
             <!-- Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="./image/multimediaSiete.jpg" class="card-img-top" alt="Tinglados">
+                    <img src="./image/cardTinglados.png" class="card-img-top" alt="Tinglados">
                     <div class="card-body">
                         <h5 class="card-title">TINGLADOS</h5>
                         <p class="card-text">son estructuras especializadas cruciales en
@@ -88,7 +90,7 @@
             <!-- Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="./image/multimediaDieciocho.jpg" class="card-img-top" alt="Naves industriales">
+                    <img src="./image/cardNaves.png" class="card-img-top" alt="Naves industriales">
                     <div class="card-body">
                         <h5 class="card-title">NAVES INDUSTRIALES</h5>
                         <p class="card-text">Esenciales en manufactura y logística, son
@@ -108,7 +110,7 @@
             <!-- Card 3 -->
             <div class="col-md-4 mb-4">
                 <div class="card text-center">
-                    <img src="./image/multimediaDiez.jpg" class="card-img-top" alt="Galpones">
+                    <img src="./image/cardGalpones.png" class="card-img-top" alt="Galpones">
                     <div class="card-body">
                         <h5 class="card-title">GALPONES</h5>
                         <p class="card-text">Espacios amplios y versátiles, son utilizados
@@ -125,9 +127,9 @@
             </div>
 
 
-            <div>
+            <div class="text-center">
                 <p class="d-inline-flex gap-1">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    <button class="btn btn-success btn-lg" type="button " data-bs-toggle="collapse"
                         data-bs-target=".multi-collapse" aria-expanded="false"
                         aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3">Ver mas
                         servicios</button>
@@ -139,17 +141,17 @@
                 <div class="col">
                     <div class="collapse multi-collapse" id="multiCollapseExample3">
                         <div class="card card-body">
-                            <img src="./image/multimediaDieciocho.jpg" class="card-img-top" alt="Servicio 2">
+                            <img src="./image/cardPisos.png" class="card-img-top" alt="Servicio 2">
                             <br>
                             <h5 class="card-title text-center">PISOS INDUSTRIALES</h5><br>
-                            Son revestimientos especializados diseñados
-                            para soportar cargas pesadas y resistir
-                            condiciones industriales rigurosas. Utilizados
-                            en almacenes, fábricas y entornos comerciales,
-                            proporcionan una superficie duradera que
-                            facilita operaciones seguras y eficientes,
-                            garantizando la integridad de las instalaciones
-                            y optimizando los procesos productivos.
+                            <p>Son revestimientos especializados diseñados
+                                para soportar cargas pesadas y resistir
+                                condiciones industriales rigurosas. Utilizados
+                                en almacenes, fábricas y entornos comerciales,
+                                proporcionan una superficie duradera que
+                                facilita operaciones seguras y eficientes,
+                                garantizando la integridad de las instalaciones
+                                y optimizando los procesos productivos.</p>
                             <a href="#subject" class="btn btn-primary">¡Quiero una propuesta!</a>
                         </div>
 
@@ -159,7 +161,7 @@
                     <div class="col">
                         <div class="collapse multi-collapse" id="multiCollapseExample1">
                             <div class="card card-body">
-                                <img src="./image/multimediaDieciocho.jpg" class="card-img-top" alt="Servicio 2">
+                                <img src="./image/cardZingueria.png" class="card-img-top" alt="Servicio 2">
                                 <br>
                                 <h5 class="card-title text-center">ZINGUERIA</h5><br>
                                 <p>se dedica al diseño e instalación de elementos
@@ -176,17 +178,18 @@
                     <div class="col">
                         <div class="collapse multi-collapse" id="multiCollapseExample2">
                             <div class="card card-body">
-                                <img src="./image/multimediaDieciocho.jpg" class="card-img-top" alt="Servicio 2">
+                                <img src="./image/cardDurlock.png" class="card-img-top" alt="Servicio 2">
                                 <br>
                                 <h5 class="card-title text-center">DURLOCK</h5><br>
-                                También conocido como tabiquería seca, se
-                                utiliza para construir paredes y cielos rasos de
-                                manera rápida y eficiente. Compuesto por
-                                placas de yeso laminado sobre estructuras
-                                metálicas, ofrece una solución versátil en
-                                proyectos de construcción, proporcionando un
-                                acabado interior resistente y de alta calidad en
-                                viviendas y locales comerciales.
+                                <p>
+                                    También conocido como tabiquería seca, se
+                                    utiliza para construir paredes y cielos rasos de
+                                    manera rápida y eficiente. Compuesto por
+                                    placas de yeso laminado sobre estructuras
+                                    metálicas, ofrece una solución versátil en
+                                    proyectos de construcción, proporcionando un
+                                    acabado interior resistente y de alta calidad en
+                                    viviendas y locales comerciales.</p>
                                 <a href="#subject" class="btn btn-primary">¡Quiero una propuesta!</a>
                             </div>
                         </div>
@@ -195,8 +198,21 @@
             </div>
     </section>
 
-    <section>
-        <h2>Nosotros</h2>
+
+    <!-- SECCION DE NOSOTROS -->
+
+
+    <section id="sectionNosotros">
+        <h2 class="textNosotros">Nosotros</h2>
+
+        <p class="textNosotros">30 años de experiencia en el rubro y una fuerte
+            vocacion por el servicio creando y llevando a cabo mas de 280 proyectos finalizados. una
+            empresa
+            familiar
+            con un sueño en comun, crecer juntos!
+
+        </p>
+        <hr>
 
 
         <!-- Carrousel con fotos que me pasa mati -->
@@ -225,7 +241,8 @@
         </div>
 
 
-        <h2>Nuestros clientes</h2>
+        <h2 class="textNosotros">Nuestros clientes</h2>
+        <p class="textNosotros">Gracias por ser parte y acompañarnos en tantos años de producción!</p>
 
         <!-- Cards con opiniones de sus clientes -->
         <div class="modificationCards">
@@ -271,8 +288,11 @@
 
     </section>
 
-    <section>
-        <!-- <form action="">FORMULARIO</form> -->
+
+    <!-- SECCION DEL FORMULARIO -->
+
+
+    <section id="sectionForm">
         <div class="main-content">
 
             <div class="form-content">
@@ -284,26 +304,35 @@
                     <form action="https://formsubmit.co/tecnoworld.presupuestos@gmail.com" method="POST">
 
                         <label for="subject">Asunto</label>
-                        <input type="text" name="subject" placeholder="Ingrese el asunto" id="subject">
+                        <select name="asunto" id="subject">
+                            <option value="tinglados">Tinglados</option>
+                            <option value="naves industriales">Naves industriales</option>
+                            <option value="galpones">Galpones</option>
+                            <option value="pisos industriales">Pisos industriales</option>
+                            <option value="zingueria">Zingueria</option>
+                            <option value="durlock">Durlock</option>
+                        </select>
+
 
 
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" placeholder="Ingrese su nombre" id="name">
+                        <input type="text" name="name" placeholder="Ingrese su nombre" id="name" required>
 
 
                         <label for="email">Correo electronico</label>
-                        <input type="email" name="email" placeholder="Ingrese su correo electronico" id="email">
+                        <input type="email" name="email" placeholder="Ingrese su correo electronico" id="email"
+                            required>
 
                         <label for="phone">Telefono</label>
-                        <input type="number" name="phone" placeholder="Ingrese su Nro. de telefono" id="phone">
+                        <input type="number" name="phone" placeholder="Ingrese su Nro. de telefono" id="phone" required>
 
 
                         <label for="message">Mensaje</label>
-                        <textarea name="message" id="message" placeholder="Ingrese el mensaje" cols="30"
+                        <textarea name="message" id="message" placeholder="Ingrese su mensaje por favor" cols="30"
                             rows="5"></textarea>
 
                         <input class="btn-form" type="submit" value="Enviar">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+                        <input type="hidden" name="_next" value="https://www.instagram.com/cig.oficial/">
                         <input type="hidden" name="_captcha" value="false">
 
                     </form>
@@ -312,37 +341,40 @@
 
         </div>
 
-        <!-- campos: nombre, mail, telefono, desplegable, mensaje, submit -->
         <!-- <img src="" alt="Imagenes desplegables"> -->
     </section>
 
     <!-- informacion de la empresa -->
 
     <footer class="site-footer">
+        <div id="sectionFooter">
+        </div>
         <div class="footer-container">
 
             <div class="footer-section">
                 <h3>Secciones</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Formulario</a></li>
+                    <li><a href="#sectionID">Home</a></li>
+                    <li><a href="#sectionServicios">Servicios</a></li>
+                    <li><a href="#sectionNosotros">Nosotros</a></li>
+                    <li><a href="#sectionForm">Formulario</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h3>Contacto</h3>
-                <p>Email: info@cigconstrucciones.com</p>
+                <p>Email: cig.presupuestos@gmail.com</p>
                 <p>Teléfono: +123456789</p>
             </div>
 
             <div class="footer-section">
                 <h3>Redes Sociales</h3>
                 <ul class="social-icons">
-                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/cig.oficial/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="mailto:tecnoworld.presupuestos@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                    <li><a href="mailto:tecnoworld.presupuestos@gmail.com" target="_blank"><i
+                                class="fa-regular fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>

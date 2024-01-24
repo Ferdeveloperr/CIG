@@ -56,7 +56,7 @@
 }
 
 .header .logo img:hover {
-    transform: scale(1.4);
+    transform: scale(1.6);
 }
 
 .header .nav-links {
@@ -69,7 +69,7 @@
 }
 
 .header .nav-links li:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .header .nav-links a {
@@ -83,6 +83,7 @@
 }
 
 .special-btn-nav button {
+
     font-weight: 700;
     color: black;
     padding: 9px 25px;
@@ -90,13 +91,13 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.4s ease 0s;
+    transition: all 0.8s ease 0.1s;
 }
 
 .special-btn-nav button:hover {
     background-color: green;
     color: white;
-    transform: scale(1.2);
+    transform: scale(2.2);
 
 }
 
@@ -122,37 +123,11 @@
 /* Estilos de la section principal */
 
 
-/* .textMain {
-    display: flex;
-    margin-top: 20%;
-    margin-left: 37%;
-    font-size: 40px;
-    position: absolute;
-}
-
-.subtMain {
-    display: flex;
-    margin-top: 25%;
-    margin-left: 25%;
-    font-size: 35px;
-    position: absolute;
-
-}
-
-.bgModification img {
-    width: 100%;
-    height: 50%;
-    background-size: cover;
-    display: flex;
-
-
-
-} */
 
 .containerMain {
     display: flex;
     position: relative;
-    height: 60%;
+    height: 100%;
     /* Ajusta la altura según tus necesidades */
     overflow: hidden;
 }
@@ -207,7 +182,6 @@ body {
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    /* Cambiado a column */
     min-height: 100vh;
 }
 
@@ -240,13 +214,47 @@ body {
     /* Ajusta el tamaño y recorte de la imagen */
 }
 
+.textServicios {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
 
 
 /* ESTILOS DE LA SECCION DE NOSOTROS */
 .modificationCards {
     margin-top: 100px;
+}
+
+.carousel-control-next {
+    width: 8%;
+    background-color: #000;
+    /* Ajusta el ancho según tus necesidades */
+}
+
+.carousel-control-prev {
+    width: 8%;
+    background-color: #000;
+    /* Ajusta el ancho según tus necesidades */
+}
+
+.textNosotros {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    font-weight: 700;
+    font-family: 'Roboto Mono', monospace;
 
 }
+
 
 
 
@@ -294,14 +302,17 @@ form {
 
 label {
 
-    font-size: 17px;
+    font-size: 22px;
     color: #f4f6f9;
     margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
 
 }
 
 input,
-textarea {
+textarea,
+select {
     padding: 17px 14px;
     background-color: black;
     border: 0;
@@ -431,6 +442,7 @@ input[type=number]::-webkit-outer-spin-button {
     form {
         width: 100%;
     }
+
 }
 
 @media (max-width: 768px) {
